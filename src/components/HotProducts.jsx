@@ -13,7 +13,7 @@ const HotProducts = () => {
                         Hot Offer
                     </h2>
                     <a
-                        href=""
+                        href="/products"
                         className="text-lg text-primary font-medium underline hover:no-underline"
                     >
                         More Products
