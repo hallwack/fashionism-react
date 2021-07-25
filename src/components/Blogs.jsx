@@ -30,24 +30,24 @@ const Blogs = () => {
                         title="SHOWROOM OPENING"
                         highlights="Showroom has opened in Bali, Indonesia"
                         image={showroom1}
-                        classLink="row-span-3 bg-cover rounded-md"
-                        classText="text-left ml-10 py-36"
+                        classLink="row-span-3"
+                        classText="py-36"
                     />
                     <CardBlog
                         link="/blogs/2"
                         title="SHOWROOM OPENING"
                         highlights="Showroom has opened in Bali, Indonesia"
                         image={showroom2}
-                        classLink="row-span-2 bg-cover rounded-md"
-                        classText="text-left ml-10 py-8"
+                        classLink="row-span-2"
+                        classText="py-8"
                     />
                     <CardBlog
                         link="/blogs/3"
                         title="SHOWROOM OPENING"
                         highlights="Showroom has opened in Bali, Indonesia"
                         image={showroom1}
-                        classLink="bg-cover rounded-md"
-                        classText="text-left ml-10 py-8"
+                        classLink=""
+                        classText="py-8"
                     />
                 </div>
             </div>

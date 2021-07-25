@@ -15,7 +15,7 @@ const CardCart = () => {
     };
 
     return (
-        <div className="bg-gray-50 rounded-md shadow-md p-5 w-4/5">
+        <div className="bg-gray-50 rounded-md shadow-md p-5 w-9/12">
             <div className="grid grid-cols-4 border-b border-black border-opacity-50 pb-2 mb-4">
                 <h3 className="text-center font-semibold text-lg">Product</h3>
                 <h3 className="text-center font-semibold text-lg">Quantity</h3>
