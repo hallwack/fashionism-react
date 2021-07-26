@@ -7,8 +7,7 @@ function App() {
     return (
         <div className="App container mx-auto">
             <Button
-                bg="primary"
-                shadow="md"
+                isDisable
                 buttonClass="px-5 py-2 mt-5 font-inter rounded text-lg font-semibold"
             >
                 Testing
