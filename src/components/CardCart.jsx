@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Button from "./Button";
 import jamir from "../assets/JAMIR-V4-Y5-01 1.png";
 
 const CardCart = () => {
@@ -25,31 +26,34 @@ const CardCart = () => {
             <div className="grid grid-cols-4">
                 <div className="flex gap-4">
                     <div>
-                        <a href="/products/jamir">
-                            <img className="h-40" src={jamir} alt="" />
-                        </a>
+                        <Button type="link" href="/products/jamir">
+                            <img className="w-40" src={jamir} alt="" />
+                        </Button>
                     </div>
                     <div className="flex flex-col gap-1">
-                        <a href="products/jamir">
+                        <Button type="link" href="/products">
                             <h2 className="text-lg font-semibold">Jamir</h2>
                             <p>T-Shirt, Men</p>
-                        </a>
+                        </Button>
                         <div>
-                            <button type="button" className="underline">
+                            <Button
+                                type="button"
+                                className="underline hover:no-underline"
+                            >
                                 Remove
-                            </button>
+                            </Button>
                         </div>
                     </div>
                 </div>
                 <div className="flex justify-center items-center gap-3">
-                    <button type="button" onClick={itemMinus}>
+                    <Button type="button" onClick={itemMinus}>
                         <svg
                             className="fill-current text-gray-500 w-4"
                             viewBox="0 0 448 512"
                         >
                             <path d="M416 208H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h384c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z" />
                         </svg>
-                    </button>
+                    </Button>
 
                     <input
                         className="text-primary w-14 h-9 rounded-md border-sky-800 shadow-sm focus:border-blue-500 focus:ring focus:ring-blue-400 focus:ring-opacity-50"
@@ -58,14 +62,14 @@ const CardCart = () => {
                         readOnly
                     />
 
-                    <button type="button" onClick={itemPlus}>
+                    <Button type="button" onClick={itemPlus}>
                         <svg
                             className="fill-current text-gray-500 w-4"
                             viewBox="0 0 448 512"
                         >
                             <path d="M416 208H272V64c0-17.67-14.33-32-32-32h-32c-17.67 0-32 14.33-32 32v144H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h144v144c0 17.67 14.33 32 32 32h32c17.67 0 32-14.33 32-32V304h144c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z" />
                         </svg>
-                    </button>
+                    </Button>
                 </div>
                 <div className="flex justify-center items-center">
                     <p>IDR 189,000</p>

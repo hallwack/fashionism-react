@@ -6,6 +6,7 @@ import {
     faTwitter,
     faWhatsapp,
 } from "@fortawesome/free-brands-svg-icons";
+import Button from "./Button";
 
 const Footer = () => {
     return (
@@ -61,12 +62,12 @@ const Footer = () => {
                             className="text-primary w-3/5 rounded-md border-sky-800 shadow-sm focus:border-blue-500 focus:ring focus:ring-blue-400 focus:ring-opacity-50"
                             placeholder="example@email.com"
                         />
-                        <button
-                            type="submit"
-                            className="ml-2 px-4 py-2 bg-gray-500 rounded text-lg"
+                        <Button
+                            className="ml-2 px-4 py-2 rounded text-lg"
+                            bg="tertiary"
                         >
                             Submit
-                        </button>
+                        </Button>
                     </form>
                 </div>
             </div>

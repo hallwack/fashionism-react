@@ -1,4 +1,5 @@
 import React from "react";
+import Button from "./Button";
 
 const TransactionDetails = () => {
     return (
@@ -21,18 +22,20 @@ const TransactionDetails = () => {
                 </div>
             </div>
             <div className="flex gap-4 justify-between">
-                <button
-                    type="submit"
-                    className="px-4 py-2 w-2/5 bg-gray-primary bg-opacity-30 rounded text-lg font-medium text-white"
+                <Button
+                    type="button"
+                    className="px-4 py-2 w-2/5 rounded text-lg font-medium"
+                    bg="tertiary"
                 >
                     Back
-                </button>
-                <button
-                    type="submit"
-                    className="px-5 py-2 w-3/5 font-inter bg-gray-primary text-primary rounded text-lg font-semibold shadow-md hover:shadow-none transition duration-300 focus:ring-2 focus:ring-gray-200 focus:ring-offset-2 focus:ring-opacity-80 focus:ring-offset-primary"
+                </Button>
+                <Button
+                    type="button"
+                    className="px-5 py-2 w-3/5 rounded text-lg font-semibold"
+                    bg="secondary"
                 >
                     Checkout
-                </button>
+                </Button>
             </div>
         </div>
     );

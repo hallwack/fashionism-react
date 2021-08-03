@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import Navbar from "../components/Navbar";
 import Hero from "../components/Hero";
 import Banner from "../components/Banner";
@@ -7,14 +7,16 @@ import HotProducts from "../components/HotProducts";
 import Footer from "../components/Footer";
 
 const Home = () => {
+    const hotProductsRef = useRef(null);
+
     return (
         <div className="font-inter">
             <Navbar />
             <main className="relative space-y-14">
-                <Hero />
+                <Hero refHotProducts={hotProductsRef} />
                 <Banner />
                 <Blogs />
-                <HotProducts />
+                <HotProducts refHotProducts={hotProductsRef} />
             </main>
             <Footer />
         </div>

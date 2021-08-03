@@ -1,8 +1,15 @@
 import React from "react";
 import menBannerLeft from "../assets/men-banner-left.png";
 import womenBannerRight from "../assets/women-banner-right.png";
+import Button from "./Button.jsx";
 
-const Hero = () => {
+const Hero = ({ refHotProducts }) => {
+    const showHotProducts = () => {
+        window.scrollTo({
+            top: refHotProducts.current.offsetTop - 50,
+            behavior: "smooth",
+        });
+    };
     return (
         <section className="w-full bg-gray-100">
             <div className="flex flex-row justify-between">
@@ -18,9 +25,14 @@ const Hero = () => {
                     <p className="text-primary font-medium text-xl">
                         Choose your best fits here!
                     </p>
-                    <button className="px-4 py-2 bg-primary rounded text-white font-semibold shadow-md hover:shadow-none transition duration-300">
+                    <Button
+                        className="px-4 py-2 rounded font-semibold"
+                        bg="primary"
+                        shadow="lg"
+                        onClick={showHotProducts}
+                    >
                         EXPLORE NOW
-                    </button>
+                    </Button>
                 </div>
                 <img
                     src={womenBannerRight}

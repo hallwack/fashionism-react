@@ -1,5 +1,6 @@
 import { Dialog, Transition } from "@headlessui/react";
 import React, { Fragment, useState } from "react";
+import Button from "./Button";
 
 const CardImage = (props) => {
     const [openImage, setOpenImage] = useState(false);
@@ -14,13 +15,13 @@ const CardImage = (props) => {
 
     return (
         <>
-            <button type="button" onClick={openModal}>
+            <Button type="button" onClick={openModal}>
                 <img
                     className="rounded-md shadow-md"
                     src={props.image}
                     alt={props.altImage}
                 />
-            </button>
+            </Button>
 
             <Transition appear show={openImage} as={Fragment}>
                 <Dialog
@@ -41,7 +42,6 @@ const CardImage = (props) => {
                             <Dialog.Overlay className="fixed inset-0" />
                         </Transition.Child>
 
-                        {/* This element is to trick the browser into centering the modal contents. */}
                         <span
                             className="inline-block h-screen align-middle"
                             aria-hidden="true"
@@ -63,13 +63,13 @@ const CardImage = (props) => {
                                     src={props.image}
                                     alt={props.altImage}
                                 />
-                                <button
+                                <Button
                                     type="button"
-                                    className="px-5 py-2 mt-5 font-inter bg-primary rounded text-white text-lg font-semibold shadow-md hover:shadow-none transition duration-300"
+                                    className="mt-5 text-primary font-inter text-lg font-semibold"
                                     onClick={closeModal}
                                 >
                                     Close
-                                </button>
+                                </Button>
                             </div>
                         </Transition.Child>
                     </div>

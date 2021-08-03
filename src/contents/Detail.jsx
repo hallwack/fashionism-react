@@ -9,7 +9,7 @@ const Detail = () => {
         <div className="font-inter space-y-12">
             <Navbar />
             <main className="relative space-y-14">
-                <section class="container mx-auto text-primary">
+                <section className="container mx-auto text-primary">
                     <div className="flex flex-row gap-10">
                         <ImageGallery />
                         <CardDetails />

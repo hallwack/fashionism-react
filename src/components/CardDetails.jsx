@@ -1,4 +1,5 @@
 import React from "react";
+import Button from "./Button";
 
 const CardDetails = () => {
     return (
@@ -12,9 +13,14 @@ const CardDetails = () => {
             </p>
             <p className="text-xl font-medium">Price: IDR 189,000</p>
             <div>
-                <button className="px-5 py-2 bg-primary rounded text-white text-lg font-semibold shadow-md hover:shadow-none transition duration-300">
+                <Button
+                    type="submit"
+                    bg="primary"
+                    shadow="lg"
+                    className="px-5 py-2 rounded text-lg font-semibold"
+                >
                     Add To Cart
-                </button>
+                </Button>
             </div>
         </div>
     );
